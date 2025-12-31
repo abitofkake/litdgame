@@ -1,0 +1,27 @@
+.instructions {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+    top: 0;
+    left: 0;
+
+    z-index: 100;
+}
+
+.instructions::before {
+    width: 100vw;
+    height: 100vh;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+
+    background-color: #130c1a;
+    opacity: 50%;
+}
+

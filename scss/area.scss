@@ -1,0 +1,36 @@
+#area {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+
+        .game {
+            height: 100%;
+            width: 65%; 
+        }
+
+        .menu {
+            height: 100%;
+            width: 35%;
+        }
+}
+
+@media screen and (max-width: 1000px) {
+    #area {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+
+        .menu {
+            max-height: 45vh;
+            margin-top: 1vh;
+            width: 100%;
+        }
+
+        .game {
+            min-height: 53vh;
+            height: 53vh;
+            width: 100vw;
+            margin-bottom: 2vh;
+        }
+    }
+}

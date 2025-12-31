@@ -1,0 +1,13 @@
+[
+    {
+        "category": "bed",
+        "icon": "",
+        "items": [
+            {
+            "id": 1,
+            "furniture": "bed",
+            "color": "green"
+            }
+        ]
+    }
+]

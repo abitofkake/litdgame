@@ -1,0 +1,520 @@
+@font-face {
+  font-family: Noelle;
+  src: url(../../assets/fonts/noelle.otf);
+}
+@font-face {
+  font-family: Field;
+  src: url(../../assets/fonts/the-field-of-hopes-and-dreams.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Field;
+}
+
+html, body {
+  height: 100%;
+  max-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-color: #130c1a;
+}
+
+::-webkit-scrollbar {
+  width: 16px;
+  margin-right: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #46556d;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #fff;
+}
+
+@media screen and (max-width: 1000px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+header {
+  height: 80px;
+  border-bottom: #291c38 8px solid;
+  background-color: #dbe7ea;
+}
+
+footer {
+  height: 40px;
+  width: 100%;
+  background-color: #291c38;
+}
+
+.instructions {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.instructions::before {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background-color: #130c1a;
+  opacity: 50%;
+}
+
+#area {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+#area .game {
+  height: 100%;
+  width: 65%;
+}
+#area .menu {
+  height: 100%;
+  width: 35%;
+}
+
+@media screen and (max-width: 1000px) {
+  #area {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #area .menu {
+    max-height: 45vh;
+    margin-top: 1vh;
+    width: 100%;
+  }
+  #area .game {
+    min-height: 53vh;
+    height: 53vh;
+    width: 100vw;
+    margin-bottom: 2vh;
+  }
+}
+.game {
+  height: 100%;
+  background-color: #130c1a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.game .trash {
+  position: absolute;
+  height: 14.2867142857%;
+  aspect-ratio: 1/1;
+  bottom: 36px;
+  left: 36px;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  background-image: url(../assets/sprites/trash-close.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  z-index: 99;
+}
+.game .trash:hover {
+  background-image: url(../assets/sprites/trash-open.png);
+}
+.game #room {
+  height: 100%;
+  width: 100vh;
+  aspect-ratio: 1/1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #130c1a;
+}
+.game #room .tile {
+  height: 14.28%;
+  aspect-ratio: 1/1;
+  position: relative;
+  margin: 0;
+  background-repeat: no repeat;
+  background-size: contain;
+}
+.game #room .tile img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.game #room .hover {
+  opacity: 25%;
+}
+.game #room .row {
+  height: 11.1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 1000px) {
+  #area .game {
+    height: 100%;
+  }
+  #area .game .trash {
+    bottom: 18px;
+    left: 16px;
+  }
+  #area .game #room {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 100%;
+  }
+  #area .game #room .tile {
+    height: auto;
+    width: 14.28%;
+  }
+}
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  z-index: 99;
+}
+.menu .heading-container {
+  min-height: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 18px;
+  z-index: 99;
+}
+.menu .heading-container .save {
+  height: 100%;
+  aspect-ratio: 1/1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: xx-large;
+  color: #130c1a;
+  background: #ffffff;
+}
+.menu .heading-container .save:hover {
+  cursor: pointer;
+  background-color: #f4ef90;
+}
+.menu .heading-container .heading {
+  height: 100%;
+  width: calc(100% - 72px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 24px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  color: #ffffff;
+  vertical-align: bottom;
+  font-family: Noelle;
+  font-weight: normal;
+  font-size: 36px;
+}
+.menu .menu-container {
+  height: calc(100% - 86px);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  border-bottom: #fff solid 6px;
+}
+.menu .menu-container .items-hidden {
+  display: none;
+}
+.menu .menu-container .items-active {
+  display: block;
+}
+.menu .menu-container #flooring .items .item {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: calc(25% - 2px);
+  aspect-ratio: 1/1;
+}
+.menu .menu-container .items-container {
+  min-height: 100%;
+  width: 100%;
+  padding: 0 24px;
+  z-index: 2;
+  overflow-y: scroll;
+}
+.menu .menu-container .items-container .desktop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.menu .menu-container .items-container .mobile {
+  display: none;
+}
+.menu .menu-container .items-container .items {
+  width: 100%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 48px;
+}
+.menu .menu-container .items-container .items .item {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 25%;
+  aspect-ratio: 1/1;
+  margin: 0;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.menu .menu-container .items-container .items .item:hover {
+  cursor: pointer;
+}
+.menu .menu-container .button-menu {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.menu .menu-container .button-menu .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 99;
+}
+.menu .menu-container .button-menu .buttons button {
+  height: 64px;
+  width: 64px;
+  background-color: #fff;
+  border: #fff 4px solid;
+  border-left: transparent;
+  margin-bottom: 18px;
+  padding: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.menu .menu-container .button-menu .buttons button img {
+  height: 100%;
+  aspect-ratio: 1/1;
+}
+.menu .menu-container .button-menu .buttons button .dark-icon {
+  display: block;
+}
+.menu .menu-container .button-menu .buttons button .light-icon {
+  display: none;
+}
+.menu .menu-container .button-menu .buttons button:hover {
+  cursor: pointer;
+  background-color: #130c1a;
+  border-left: transparent;
+}
+.menu .menu-container .button-menu .buttons button:hover .dark-icon {
+  display: none;
+}
+.menu .menu-container .button-menu .buttons button:hover .light-icon {
+  display: block;
+}
+.menu .menu-container .button-menu .buttons .button-active {
+  background-color: #130c1a;
+}
+.menu .menu-container .button-menu .buttons .button-active .dark-icon {
+  display: none;
+}
+.menu .menu-container .button-menu .buttons .button-active .light-icon {
+  display: block;
+}
+.menu .menu-container .button-menu .buttons .button-active:hover {
+  cursor: pointer;
+  background-color: #fff;
+}
+.menu .menu-container .button-menu .buttons .button-active:hover .dark-icon {
+  display: block;
+}
+.menu .menu-container .button-menu .buttons .button-active:hover .light-icon {
+  display: none;
+}
+
+.menu::before {
+  width: 100%;
+  height: calc(100% - 12px);
+  content: "";
+  position: absolute;
+  border: 6px #ffffff solid;
+  background-color: #130c1a;
+  z-index: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  #area .menu {
+    position: relative;
+  }
+  #area .menu .heading-container {
+    min-height: 48px;
+    margin-bottom: 18px;
+  }
+  #area .menu .heading-container .save {
+    font-size: x-large;
+  }
+  #area .menu .heading-container .heading {
+    font-size: 28px;
+    padding: 0;
+  }
+  #area .menu .menu-container {
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin: 0;
+    overflow-y: hidden;
+    border-bottom: #fff solid 6px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #area .menu .menu-container .items-container {
+    width: 90%;
+    padding: 0;
+  }
+  #area .menu .menu-container .items-container .desktop {
+    display: none;
+  }
+  #area .menu .menu-container .items-container .mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #area .menu .menu-container .items-container .items .item {
+    width: 16.66%;
+  }
+  #area .menu .menu-container .button-menu {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: none;
+    position: absolute;
+    max-height: -webkit-fit-content;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+    width: 100%;
+    padding: 0 3vw;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    z-index: 99;
+  }
+  #area .menu .menu-container .button-menu .button-divider {
+    display: none;
+  }
+  #area .menu .menu-container .button-menu .buttons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: none;
+  }
+  #area .menu .menu-container .button-menu .buttons button {
+    height: 12vw;
+    width: 12vw;
+    margin: 0 0.5vw;
+    font-size: medium;
+    border: #fff 4px solid;
+    border-bottom: transparent;
+  }
+  #area .menu::before {
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    content: "";
+    position: absolute;
+    border: 6px #ffffff solid;
+    z-index: 0;
+  }
+}

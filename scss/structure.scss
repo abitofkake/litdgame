@@ -1,0 +1,44 @@
+@font-face {
+    font-family: Noelle;
+    src: url(../../assets/fonts/noelle.otf);
+}
+@font-face {
+    font-family: Field;
+    src: url(../../assets/fonts/the-field-of-hopes-and-dreams.otf);
+}
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: Field;
+}
+
+html, body {
+ height: 100%;
+ max-height: 100vh;
+ overflow: hidden;
+ position: relative;
+ background-color: #130c1a;
+}
+
+::-webkit-scrollbar {
+  width: 16px;
+  margin-right: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: #46556d;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #fff;
+}
+
+@media screen and (max-width: 1000px) {
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
