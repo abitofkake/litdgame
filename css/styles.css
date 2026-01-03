@@ -1,21 +1,25 @@
 @font-face {
   font-family: Noelle;
-  src: url(../assets/fonts/noelle.otf);
+  src: url(../assets/fonts/noelle.otf), url(https://abitofkake.github.io/litdgame/assets/fonts/noelle.otf);
 }
 @font-face {
   font-family: Field;
-  src: url(../assets/fonts/the-field-of-hopes-and-dreams.otf);
+  src: url(/assets/fonts/the-field-of-hopes-and-dreams.otf), url(https://abitofkake.github.io/litdgame/assets/fonts/the-field-of-hopes-and-dreams.otf);
 }
 @font-face {
   font-family: Bit;
-  src: url(../assets/fonts/8bitoperator-jve-light.otf);
+  src: url(/assets/fonts/8bitoperator-jve-light.otf), url(https://abitofkake.github.io/litdgame/assets/fonts/8bitoperator-jve-light.otf);
+}
+@font-face {
+  font-family: Rune;
+  src: url(/assets/fonts/runede.otf), url(https://abitofkake.github.io/litdgame/assets/fonts/runede.otf);
 }
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: Field;
+  font-family: Bit, Field, Rune;
 }
 
 html, body {
