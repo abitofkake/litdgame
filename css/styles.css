@@ -22,6 +22,11 @@
   font-family: Bit, Field, Rune;
 }
 
+h2 {
+  font-size: 36px;
+  font-weight: normal;
+}
+
 html, body {
   height: 100%;
   max-height: 100vh;
@@ -45,12 +50,20 @@ html, body {
   background-color: #fff;
 }
 
+@media screen and (max-width: 1100px) {
+  h2 {
+    font-size: 28px;
+  }
+}
 @media screen and (max-width: 1000px) {
   ::-webkit-scrollbar {
     display: none;
   }
   p, span {
     font-size: 12px;
+  }
+  h2 {
+    font-size: 24px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -396,15 +409,13 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 24px;
+  padding-left: 24px;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
   color: #ffffff;
   vertical-align: bottom;
   font-family: Noelle;
-  font-weight: normal;
-  font-size: 36px;
 }
 .menu .menu-container {
   height: calc(100% - 86px);
@@ -574,7 +585,6 @@ footer {
     font-size: x-large;
   }
   #area .menu .heading-container .heading {
-    font-size: 28px;
     padding: 0;
   }
   #area .menu .menu-container {

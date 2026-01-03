@@ -31,14 +31,11 @@
             height: 100%;
             width: calc(100% - 72px);
             display: flex;
-            padding: 0 24px;
+            padding-left: 24px;
             align-items: flex-end;
             color: #ffffff;
             vertical-align: bottom;
             font-family: Noelle;
-            font-weight: normal;
-            font-size: 36px;
-            // background-color: #f4ef90;
         }
 
     }
@@ -208,7 +205,6 @@
                 }
 
                 .heading {
-                    font-size: 28px;
                     padding: 0;
                 }
             }
