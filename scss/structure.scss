@@ -1,21 +1,21 @@
 @font-face {
     font-family: Noelle;
-    src: url(/assets/fonts/noelle.otf);
+    src: url(../assets/fonts/noelle.otf);
 }
 @font-face {
     font-family: Field;
-    src: url(/assets/fonts/the-field-of-hopes-and-dreams.otf);
+    src: url(../assets/fonts/the-field-of-hopes-and-dreams.otf);
 }
 @font-face {
     font-family: Bit;
-    src: url(/assets/fonts/8bitoperator-jve-light.otf);
+    src: url(../assets/fonts/8bitoperator-jve-light.otf);
 }
 
 * {
  margin: 0;
  padding: 0;
  box-sizing: border-box;
- font-family: Bit;
+ font-family: Field;
 }
 
 html, body {
