@@ -95,7 +95,6 @@
                         height: fit-content;
                         width: 25%;
                         aspect-ratio: 1/1;
-                        // border: 1px red solid;
                         margin: 0;
                         object-fit: contain;
                     }
@@ -117,6 +116,7 @@
                 display: flex;
                 flex-direction: column;
                 z-index: 99;
+
 
                 button {
                     height: 64px;
@@ -196,10 +196,6 @@
 
 @media screen and (max-width: 1000px) {
     #area {
-        * {
-            // border: red 2px solid;
-        }
-
         .menu {
             position: relative;
             
@@ -222,7 +218,7 @@
                 flex-direction: column-reverse;
                 margin: 0;
                 overflow-y: hidden;
-                border-bottom: #fff solid 6px;
+                border-bottom: #fff solid 4px;
                 align-items: center;
 
                 .items-container {
@@ -265,11 +261,13 @@
                         padding: none;
 
                         button {
+                            max-height: 64px;
+                            max-width: 64px;
                             height: 12vw;
                             width: 12vw;
                             margin: 0 0.5vw;
                             font-size: medium;
-                            border: #fff 4px solid;
+                            border: #fff 2px solid;
                             border-bottom: transparent;
                         }
                     }
@@ -282,7 +280,7 @@
             height: calc(100% - 12px);
             content: '';
             position: absolute;
-            border: 6px #ffffff solid;
+            border: 4px #ffffff solid;
             z-index: 0;
         }
     }

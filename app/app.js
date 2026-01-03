@@ -152,6 +152,22 @@ let objects = {
                 w: 1
             }
             },
+        {
+            "id": 5,
+            "label": "photo-set-1",
+            "size": {
+                h: 1,
+                w: 2
+            }
+            },
+        {
+            "id": 6,
+            "label": "photo-set-2",
+            "size": {
+                h: 1,
+                w: 2
+            }
+            },
     ]
     },
     "rug": {
@@ -208,15 +224,22 @@ function loadroom() {
             console.log(tile);
             tile.attr("id", r)
             tile.addClass("tile")
-            tile.css("background-image", `url('assets/sprites/floor/${floortile[r]}.svg')`)
+            if(floortile[r] == 1) {
+                tile.css("background-image", `url('assets/sprites/floor/${floortile[r]}.gif')`)
+            } else {
+                tile.css("background-image", `url('assets/sprites/floor/${floortile[r]}.svg')`)
+            }
             $("#room").append(tile);
 
-            //TODO: X Button for loading screen
-
+            $("#instructions-button").css('display', 'block');
         }
     } else {
             for (let r = 0; r < 49; r++) {
-            $(`#${r}`).css("background-image", `url('assets/sprites/floor/${floortile[r]}.svg')`)
+                if(floortile[r] == 1) {
+                    $(`#${r}`).css("background-image", `url('assets/sprites/floor/${floortile[r]}.gif')`)
+                } else {
+                    $(`#${r}`).css("background-image", `url('assets/sprites/floor/${floortile[r]}.svg')`)
+                }
         }
     }
 }
@@ -610,9 +633,20 @@ function loadMenu(menu) {
     
 // }
 
+function openInstructions() {
+    console.log('open', $("#instructions"));
+    $("#instructions").addClass('show-instructions');
+    $("#instructions").removeClass('hide-instructions');
+}
+
+function closeInstructions() {
+    console.log('close', $("#instructions"));
+    $("#instructions").addClass('hide-instructions');
+    $("#instructions").removeClass('show-instructions');
+}
+
 $(document).ready(function () {
     loadroom();
-    // loadMenu('bed');
 
     $(document).on("click",".tile", function () {
         let id = $(this).attr('id');
@@ -638,15 +672,6 @@ $(document).ready(function () {
             }
         }
     }, ".tile");
-
-    // console.log("THE BUTTONS", $('.menu-button').length);
-
-    // for (b = 0; b < $('.menu-button').length; b++) {
-    //     $('.menu-button')[b])
-    // }
-    // $('.menu-button').forEach(button => {
-    //     console.log(button);
-    // });
 
     $(document).click(function() {
         if(activeHover != null) {

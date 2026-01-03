@@ -7,11 +7,61 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- <div id="instructions" class="instructions"></div> -->
+    <link 
+    rel="preload" 
+    href="assets/fonts/8bitoperator-jve-light.otf.woff2" 
+    as="font" 
+    type="font/woff" 
+    crossorigin="anonymous" />
+    <link 
+    rel="preload" 
+    href="assets/fonts/noelle.otf" 
+    as="font" 
+    type="font/otf" 
+    crossorigin="anonymous" />
+    <div id="instructions" class="show-instructions instructions">
+        <div class="instructions-container">
+            <h1 class="instructions-header">How to Play</h1>
+            <div class="instructions-sections">
+                <div class="instruction">
+                    <img src="assets/instructions/instruction-1.png" alt="">
+                    <div class="instruction-text">
+                        <p>Step 1</p>
+                        <p><span>Select an object</span> from the menu and <span>click to add</span> it to your mouse</p>
+                    </div>
+                </div>
+                <div class="instruction">
+                    <img src="assets/instructions/instruction-2.png" alt="">
+                    <div class="instruction-text">
+                        <p>Step 2</p>
+                        <p><span>Hover</span> over the floor tiles to find the best placement and <span>click to place</span></p>
+                    </div>
+                </div>
+                <div class="instruction">
+                    <img src="assets/instructions/instruction-3.png" alt="">
+                    <div class="instruction-text">
+                        <p>Step 3</p>
+                        <p>Click again to <span>move</span> or <span>delete</span> the object with the trash can</p>
+                    </div>
+                </div>
+                <div class="instruction">
+                    <img src="assets/instructions/instruction-4.png" alt="">
+                    <div class="instruction-text">
+                        <p>Step 4</p>
+                        <p>Use the <span>X</span> button at the bottom of the menu to <span>clear the room</span>!</p>
+                    </div>
+                </div>
+         
+            </div>
+            <div id="instructions-button" class="instructions-button" onclick="closeInstructions()">
+                <button>Start Decorating</button>
+            </div>
+        </div>
+    </div>
     <div id="area">
         <div id="menu" class="menu">
             <div class="heading-container">
-                <div class="save">s</div>
+                <div class="save" onclick="openInstructions()">i</div>
                 <h2 id="heading" class="heading">Flooring</h2>
             </div>
             <div class="menu-container">
@@ -37,7 +87,6 @@
                             <img class="dark-icon" src="assets/ui/floor-dark.svg" alt="Flooring Icon">
                             <img class="light-icon" src="assets/ui/floor-light.svg" alt="Flooring Icon">
                         </button>
-                        <!-- <button onclick="loadMenu('wall')"><img src="assets/ui/wall.svg" alt="Wall Icon"></button> -->
                     </div>
                     <div class="button-divider"></div>
                     <div class="buttons">
@@ -54,10 +103,15 @@
                         <img src="assets/sprites/decor/2/0.svg" alt="" class="item" onclick="selectObject('decor', 2)">
                         <img src="assets/sprites/decor/4/0.svg" alt="" class="item" onclick="selectObject('decor', 4)">
                         
-                        <div class="item"></div>
+                        <img src="assets/sprites/decor/5/0.svg" alt="" class="item" onclick="selectObject('decor', 5)">
+                        <img src="assets/sprites/decor/5/1.svg" alt="" class="item" onclick="selectObject('decor', 5)">
                         <img src="assets/sprites/decor/3/0.svg" alt="" class="item" onclick="selectObject('decor', 3)">
-                        <div class="item"></div>
                         <img src="assets/sprites/decor/4/1.svg" alt="" class="item" onclick="selectObject('decor', 4)">
+
+                        <img src="assets/sprites/decor/6/0.svg" alt="" class="item" onclick="selectObject('decor', 6)">
+                        <img src="assets/sprites/decor/6/1.svg" alt="" class="item" onclick="selectObject('decor', 6)">
+                        <div class="item"></div>                        
+                        <div class="item"></div>
                     </div>
                     <div class="mobile items">
                         <img src="assets/sprites/decor/0/0.svg" alt="" class="item" onclick="selectObject('decor', 0)">
@@ -67,10 +121,10 @@
                         <img src="assets/sprites/decor/4/0.svg" alt="" class="item" onclick="selectObject('decor', 4)">
                         <div class="item"></div>
                         
-                        <div class="item"></div>
-                        <div class="item"></div>
-                        <div class="item"></div>
-                        <div class="item"></div>
+                        <img src="assets/sprites/decor/5/0.svg" alt="" class="item" onclick="selectObject('decor', 5)">
+                        <img src="assets/sprites/decor/5/1.svg" alt="" class="item" onclick="selectObject('decor', 5)">
+                        <img src="assets/sprites/decor/6/0.svg" alt="" class="item" onclick="selectObject('decor', 6)">
+                        <img src="assets/sprites/decor/6/1.svg" alt="" class="item" onclick="selectObject('decor', 6)">
                         <img src="assets/sprites/decor/4/1.svg" alt="" class="item" onclick="selectObject('decor', 4)">
                         <div class="item"></div>
                     </div>
@@ -231,6 +285,13 @@
         </div>
         <div id="game" class="game">
             <div id="room"></div>
+            <!-- <div class="active-display">
+                <img src="" alt="">
+                <div class="display-text">
+                    <h2>Currently placing</h2>
+                    <p>Nothing</p>
+                </div>
+            </div> -->
             <button id="trash" class="trash" onclick="deleteObject()"></button>
         </div>
     </div>

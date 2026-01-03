@@ -6,12 +6,16 @@
   font-family: Field;
   src: url(../../assets/fonts/the-field-of-hopes-and-dreams.otf);
 }
+@font-face {
+  font-family: Bit;
+  src: url(../../assets/fonts/8bitoperator-jve-light.otf.woff2);
+}
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: Field;
+  font-family: Bit;
 }
 
 html, body {
@@ -29,7 +33,7 @@ html, body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background-color: #46556d;
+  background-color: #130c1a;
 }
 
 /* Handle */
@@ -40,6 +44,14 @@ html, body {
 @media screen and (max-width: 1000px) {
   ::-webkit-scrollbar {
     display: none;
+  }
+  p, span {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 600px) {
+  p, span {
+    font-size: 10px;
   }
 }
 header {
@@ -54,15 +66,117 @@ footer {
   background-color: #291c38;
 }
 
+.hide-instructions {
+  display: none;
+}
+
+.show-instructions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .instructions {
   width: 100vw;
   height: 100vh;
   position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   overflow-y: hidden;
   overflow-x: hidden;
   top: 0;
   left: 0;
   z-index: 100;
+}
+.instructions .instructions-container {
+  width: 80%;
+  max-width: 900px;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 36px 48px;
+  color: #fff;
+  border: 6px #fff solid;
+  background-color: #130c1a;
+  z-index: 99;
+}
+.instructions .instructions-container .instructions-header {
+  height: 10%;
+  font-family: Noelle;
+  font-weight: normal;
+  font-size: 36px;
+}
+.instructions .instructions-container .instructions-sections {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 80%;
+  padding: 18px 0;
+}
+.instructions .instructions-container .instructions-sections .instruction {
+  height: 40%;
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.instructions .instructions-container .instructions-sections .instruction img {
+  height: 100%;
+  width: auto;
+  aspect-ratio: 1/1;
+  background-color: #46556d;
+}
+.instructions .instructions-container .instructions-sections .instruction .instruction-text {
+  height: 100%;
+  margin-left: 24px;
+}
+.instructions .instructions-container .instructions-sections .instruction .instruction-text p, .instructions .instructions-container .instructions-sections .instruction .instruction-text span {
+  text-wrap: balance;
+  margin-bottom: 8px;
+}
+.instructions .instructions-container .instructions-sections .instruction .instruction-text span {
+  color: #f4ef90;
+}
+.instructions .instructions-container .instructions-button {
+  display: none;
+  height: 10%;
+}
+.instructions .instructions-container .instructions-button button {
+  padding: 12px;
+  border: 4px #fff solid;
+  background-color: #fff;
+  color: #130c1a;
+}
+.instructions .instructions-container .instructions-button:hover button {
+  color: #fff;
+  background-color: transparent;
 }
 
 .instructions::before {
@@ -76,6 +190,19 @@ footer {
   opacity: 50%;
 }
 
+@media screen and (max-width: 1000px) {
+  .instructions .instructions-container {
+    width: 95%;
+    height: 90%;
+  }
+  .instructions .instructions-container .instructions-header {
+    font-size: 24px;
+  }
+  .instructions .instructions-container .instructions-sections .instruction {
+    height: 22%;
+    width: 100%;
+  }
+}
 #area {
   height: 100%;
   display: -webkit-box;
@@ -147,14 +274,14 @@ footer {
   background-color: transparent;
   color: white;
   font-weight: bold;
-  background-image: url(../assets/sprites/trash-close.png);
+  background-image: url(../assets/sprites/trash-close.svg);
   background-repeat: no-repeat;
   background-size: cover;
   border: none;
   z-index: 99;
 }
 .game .trash:hover {
-  background-image: url(../assets/sprites/trash-open.png);
+  background-image: url(../assets/sprites/trash-open.svg);
 }
 .game #room {
   height: 100%;
@@ -454,7 +581,7 @@ footer {
             flex-direction: column-reverse;
     margin: 0;
     overflow-y: hidden;
-    border-bottom: #fff solid 6px;
+    border-bottom: #fff solid 4px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -502,11 +629,13 @@ footer {
     padding: none;
   }
   #area .menu .menu-container .button-menu .buttons button {
+    max-height: 64px;
+    max-width: 64px;
     height: 12vw;
     width: 12vw;
     margin: 0 0.5vw;
     font-size: medium;
-    border: #fff 4px solid;
+    border: #fff 2px solid;
     border-bottom: transparent;
   }
   #area .menu::before {
@@ -514,7 +643,7 @@ footer {
     height: calc(100% - 12px);
     content: "";
     position: absolute;
-    border: 6px #ffffff solid;
+    border: 4px #ffffff solid;
     z-index: 0;
   }
 }

@@ -1,7 +1,17 @@
+.hide-instructions {
+    display: none;
+}
+.show-instructions {
+    display: flex;
+}
+
 .instructions {
     width: 100vw;
     height: 100vh;
     position: absolute;
+
+    align-items: center;
+    justify-content: center;
 
     overflow-y: hidden;
     overflow-x: hidden;
@@ -10,6 +20,90 @@
     left: 0;
 
     z-index: 100;
+
+    .instructions-container {
+        width: 80%;
+        max-width: 900px;
+        height: 80%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        padding: 36px 48px;
+
+        color: #fff;
+
+        border: 6px #fff solid;
+        background-color: #130c1a;
+
+        z-index: 99;
+
+        .instructions-header {
+            height: 10%;
+            font-family: Noelle;
+            font-weight: normal;
+            font-size: 36px;
+        }
+
+        .instructions-sections {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            height: 80%;
+            padding: 18px 0;
+
+            .instruction {
+                height: 40%;
+                width: 45%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                img {
+                    height: 100%;
+                    width: auto;
+                    aspect-ratio: 1/1;
+                    background-color: #46556d;
+                }
+
+                .instruction-text {
+                    height: 100%;
+                    margin-left: 24px;
+                    
+                    p, span {
+                        text-wrap: balance;
+                        margin-bottom: 8px;
+                    }
+
+                    span {
+                        color: #f4ef90;
+                    }
+                }
+                
+            }
+        }
+
+        .instructions-button {
+            display: none;
+            height: 10%;
+
+            button {
+                padding: 12px;
+                border: 4px #fff solid;
+                background-color: #fff;
+                color: #130c1a;
+            }
+        }
+
+        .instructions-button:hover {
+            button {
+                color: #fff;
+                background-color: transparent;
+            }
+        }
+    }
 }
 
 .instructions::before {
@@ -25,3 +119,23 @@
     opacity: 50%;
 }
 
+@media screen and (max-width: 1000px) {
+    .instructions {
+        .instructions-container {
+            width: 95%;
+            height: 90%;
+
+            .instructions-header {
+                font-size: 24px;
+            }
+
+            .instructions-sections {
+
+                .instruction {
+                    height: 22%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
