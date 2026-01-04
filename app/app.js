@@ -94,6 +94,110 @@ let objects = {
                 w: 2
             }
             },
+            {
+            "id": 5,
+            "label": "green-queen-front",
+            "size": {
+                h: 2,
+                w: 2
+            }
+            },
+            {
+            "id": 6,
+            "label": "-",
+            "size": {
+                h: 1,
+                w: 1
+            }
+            },
+            {
+            "id": 7,
+            "label": "green-queen-back",
+            "size": {
+                h: 2,
+                w: 2
+            }
+            },
+            {
+            "id": 8,
+            "label": "green-twin-back",
+            "size": {
+                h: 2,
+                w: 1
+            }
+            },
+            {
+            "id": 9,
+            "label": "plaid-twin-back",
+            "size": {
+                h: 2,
+                w: 1
+            }
+            },
+            {
+            "id": 10,
+            "label": "striped-twin-back",
+            "size": {
+                h: 2,
+                w: 1
+            }
+            },
+            {
+            "id": 11,
+            "label": "armchair-front",
+            "size": {
+                h: 1,
+                w: 1
+            }
+            },
+            {
+            "id": 12,
+            "label": "armchair-back",
+            "size": {
+                h: 1,
+                w: 1
+            }
+            },
+            {
+            "id": 13,
+            "label": "armchair-right",
+            "size": {
+                h: 1,
+                w: 1
+            }
+            },
+            {
+            "id": 14,
+            "label": "armchair-left",
+            "size": {
+                h: 1,
+                w: 1
+            }
+            },
+            {
+            "id": 15,
+            "label": "couch-right",
+            "size": {
+                h: 2,
+                w: 1
+            }
+            },
+            {
+            "id": 16,
+            "label": "couch-left",
+            "size": {
+                h: 2,
+                w: 1
+            }
+            },
+            {
+            "id": 17,
+            "label": "couch-back",
+            "size": {
+                h: 1,
+                w: 2
+            }
+            },
          ],
     },
     "furniture": {
@@ -105,6 +209,78 @@ let objects = {
             "size": {
                 h: 1,
                 w: 1
+            }
+            },
+            {
+            "id": 1,
+            "label": "short-shelf",
+            "size": {
+                h: 1,
+                w: 1
+            }
+            },
+            {
+            "id": 2,
+            "label": "long-shelf",
+            "size": {
+                h: 1,
+                w: 2
+            }
+            },
+            {
+            "id": 3,
+            "label": "side-table-back",
+            "size": {
+                h: 1,
+                w: 1
+            }
+            },
+            {
+            "id": 4,
+            "label": "tv-left",
+            "size": {
+                h: 1,
+                w: 1
+            }
+            },
+            {
+            "id": 5,
+            "label": "tv-back",
+            "size": {
+                h: 1,
+                w: 1
+            }
+            },
+            {
+            "id": 6,
+            "label": "tv-right",
+            "size": {
+                h: 1,
+                w: 1
+            }
+            },
+            {
+            "id": 7,
+            "label": "tv-front",
+            "size": {
+                h: 1,
+                w: 1
+            }
+            },
+            {
+            "id": 8,
+            "label": "covered-table",
+            "size": {
+                h: 2,
+                w: 2
+            }
+            },
+            {
+            "id": 9,
+            "label": "table",
+            "size": {
+                h: 2,
+                w: 2
             }
             },
         ]
@@ -168,6 +344,110 @@ let objects = {
                 w: 2
             }
             },
+        {
+            "id": 7,
+            "label": "console-front",
+            "size": {
+                h: 1,
+                w: 1
+            }
+            },
+        {
+            "id": 8,
+            "label": "console-side-right",
+            "size": {
+                h: 1,
+                w: 1
+            }
+            },
+        {
+            "id": 9,
+            "label": "console-side-left",
+            "size": {
+                h: 1,
+                w: 1
+            }
+            },
+        {
+            "id": 10,
+            "label": "ralsei-plush-back",
+            "size": {
+                h: 1,
+                w: 1
+            }
+            },
+        {
+            "id": 11,
+            "label": "susie-plush-back",
+            "size": {
+                h: 1,
+                w: 1
+            }
+            },
+        {
+            "id": 12,
+            "label": "kris-plush-back",
+            "size": {
+                h: 1,
+                w: 1
+            }
+            },
+        {
+            "id": 13,
+            "label": "book-stack",
+            "size": {
+                h: 1,
+                w: 1
+            }
+            },
+        {
+            "id": 14,
+            "label": "book-single",
+            "size": {
+                h: 1,
+                w: 1
+            }
+            },
+        {
+            "id": 15,
+            "label": "book-line",
+            "size": {
+                h: 1,
+                w: 1
+            }
+            },
+        {
+            "id": 16,
+            "label": "teacups",
+            "size": {
+                h: 1,
+                w: 1
+            }
+            },
+        {
+            "id": 17,
+            "label": "teacup",
+            "size": {
+                h: 1,
+                w: 1
+            }
+            },
+        {
+            "id": 18,
+            "label": "center-cake",
+            "size": {
+                h: 1,
+                w: 2
+            }
+            },
+        {
+            "id": 19,
+            "label": "cake",
+            "size": {
+                h: 1,
+                w: 1
+            }
+            },
     ]
     },
     "rug": {
@@ -175,7 +455,6 @@ let objects = {
     "options": [
             {
                 "id": 0,
-                "name": "Deltarune Rug",
                 "label": "deltarune-rug-black",
                 "size": {
                     h: 2,
@@ -184,11 +463,26 @@ let objects = {
             },
             {
                 "id": 1,
-                "name": "Deltarune Rug",
                 "label": "deltarune-rug-green",
                 "size": {
                     h: 2,
                     w: 3
+                }
+            },
+            {
+                "id": 2,
+                "label": "lace-rug-green",
+                "size": {
+                    h: 2,
+                    w: 2
+                }
+            },
+            {
+                "id": 3,
+                "label": "lace-rug-white",
+                "size": {
+                    h: 2,
+                    w: 2
                 }
             },
         ]
@@ -221,7 +515,6 @@ function loadroom() {
     if( $('#room').is(':empty') ) {
         for (let r = 0; r < 49; r++) {
             let tile = $(document.createElement('div'));
-            console.log(tile);
             tile.attr("id", r)
             tile.addClass("tile")
             if(floortile[r] == 1) {
@@ -268,7 +561,6 @@ function hoverObject(status, id) {
     }
     
     if (activeObject.category != '' && status == "in") {
-        console.log("hover", objects[activeObject.category]["options"]);
         let h = objects[activeObject.category]["options"][activeObject.object].size.h * 7;
         let w = objects[activeObject.category]["options"][activeObject.object].size.w;
         let numid = Number(id);
@@ -312,13 +604,9 @@ function hoverObject(status, id) {
         activeHover = "hover-" + numid;
     }
 
-    console.log('activeobject', activeObject)
-    console.log('activehover', activeHover)
 }
 
 function selectObject(category, object) {
-    console.log(this);
-    console.log("selecting object")
     if(activeObject.category == category && activeObject.object == object) {
         activeObject = {
             "category": '',
@@ -330,7 +618,6 @@ function selectObject(category, object) {
             "object": object,
         };
     }
-        console.log(activeObject);
 }
 
 function placeObject(id) {
@@ -387,9 +674,6 @@ function placeObject(id) {
 
         activeHover = null;
 
-        console.log('activeobject', activeObject)
-        console.log('activehover', activeHover)
-
         $(`.hover`).each(function() {
             $(this).remove();
         });
@@ -416,10 +700,7 @@ function selectPlacedObject(id, category, object) {
             break;
     }
 
-    console.log(`.img-${z}${id}`);
-
     if(activeHover == null) {
-        console.log("select null");
         selectObject(category, object);
     $(`.img-${z}${id}`).each(function() {
         $(this).remove();
@@ -428,22 +709,15 @@ function selectPlacedObject(id, category, object) {
 }
 
 function deleteObject() {
-    console.log("delete?");
     activeObject = {
         "category": '',
         "object": ''
     };
     activeHover = null;
-    console.log(activeObject);
 }
 
-//MENU
-// function previewMenu(menu, option, optionid, label) {
-//     console.log("previewMenu", colorid, label);
-//     // $(`#${option} img`).attr("data-color", colorid);
-//     $(`#${option} img`).attr("src", `assets/sprites/${menu}/${optionid}/${label}.svg`)
-// }
 
+//MENU
 //Load item menu
 function loadMenu(menu) {
     let menuCategory = objects[menu];
@@ -453,199 +727,40 @@ function loadMenu(menu) {
     $('.items-active').removeClass("items-active");
     $(`#${menu}`).removeClass("items-hidden");
     $(`#${menu}`).addClass("items-active");
-
-    console.log(menu);
 }
 
-//Load menu
-// function loadMenu(menu) {
-//     let menuCategory = objects[menu];
-
-//     $("#heading").html(menuCategory.label);
-//     $("#items").html("");
-
-//     menuCategory.options.forEach(option => {
-//         console.log(option.size.h, option.size.w);
-        
-//         for (let h = 0; h < option.size.h; h++) {
-//             for (let w = 0; w < option.size.w; w++) {
-//                 console.log("yayy");
-//             }   
-//         }
-//     });
-
-//     // menuCategory.options.forEach(option => {
-
-//     //     //create main button div
-//     //     let button = $(document.createElement('div'));
-//     //     button.addClass("item");
-//     //     button.attr('id', option.label)
-//     //     button.attr('aria-label', option.label)
-//     //     switch (menu) {
-//     //         case "flooring":
-//     //             button.on("click", (e) => {
-//     //                 e.preventDefault();
-//     //                 setfloor(option.label);
-//     //             });
-//     //             break;
-//     //         case "bed":
-//     //         case "rug":
-//     //         case "furniture":
-//     //         case "decor":
-//     //             button.on("click", (e) => {
-//     //                 e.preventDefault();
-//     //                 console.log(e.target.id);
-//     //                 selectObject(menu, option.colors[$(`#${e.target.id}`).attr('data-color')], option.id);
-//     //             });
-//     //             break;
-//     //         default:
-//     //             break;
-//     //     }
-//     //     button.on("click", (e) => {
-//     //         e.preventDefault();
-
-//     //         console.log("this is undefined?", e.target.id, $(`#${e.target.id}`).attr('data-color'));
-//     //     })
-//     //     $("#items").append(button);
-
-//     //     //create image
-//     //     // let img = $(document.createElement('img'));
-//     //     // img.attr('id', `img-${option.label}`);
-//     //     // img.attr("data-color", 0);
-//     //     // img.attr("src", `assets/sprites/${menu}/${option.id}/${option.colors[0]}.svg`)
-//     //     // $(`#${option.label}`).append(img);
-
-//     //     //create options div
-//     //     // let options = $(document.createElement('div'));
-//     //     // options.attr('id', `select-${option.label}`);
-//     //     // options.addClass("options");
-//     //     // $(`#${option.label}`).append(options);
-
-//     //     //add color options
-//     //     // for (let c = 0; c < option.colors.length; c++) {
-//     //     //     const color = option.colors[c];
-//     //     //     let select = $(document.createElement('button'));
-//     //     //     select.addClass("color-select");
-//     //     //     if(c == 0) {
-//     //     //     select.addClass("active-color");
-//     //     //     }
-//     //     //     select.attr('id', `select-${option.label}-${c}`);
-//     //     //     select.attr("data-color", c);
-//     //     //     select.attr("style", `background-image: url(assets/sprites/colors/${color}.svg`)
-//     //     //     select.html("<span></span>")
-//     //     //     select.on("click", (e) => {
-//     //     //         e.preventDefault();
-//     //     //         previewMenu(menu, option.label, option.id, c, color);
-
-//     //     //         //change active
-//     //     //         console.log(e.target.id);
-//     //     //         let optionid = e.target.id.substring(0, e.target.id.length - 2);
-//     //     //         $(`#${optionid} .active-color`).removeClass('active-color');
-//     //     //         $(`#${e.target.id}`).addClass('active-color');
-//     //     //     })
-
-//     //     //     $(`#${option.label} .options`).append(select);
-//     //     // }
-//     // });
-    
-// }
-
-//Load menu
-// function loadMenu(menu) {
-//     let menuCategory = objects[menu];
-
-//     $("#heading").html(menuCategory.label);
-//     $("#items").html("");
-
-//     menuCategory.options.forEach(option => {
-
-//         //create main button div
-//         let button = $(document.createElement('div'));
-//         button.addClass("item");
-//         button.attr('id', option.label)
-//         button.attr('aria-label', option.label)
-//         switch (menu) {
-//             case "flooring":
-//                 button.on("click", (e) => {
-//                     e.preventDefault();
-//                     setfloor(option.label);
-//                 });
-//                 break;
-//             case "bed":
-//             case "rug":
-//             case "furniture":
-//             case "decor":
-//                 button.on("click", (e) => {
-//                     e.preventDefault();
-//                     console.log(e.target.id);
-//                     selectObject(menu, option.colors[$(`#${e.target.id}`).attr('data-color')], option.id);
-//                 });
-//                 break;
-//             default:
-//                 break;
-//         }
-//         button.on("click", (e) => {
-//             e.preventDefault();
-
-//             console.log("this is undefined?", e.target.id, $(`#${e.target.id}`).attr('data-color'));
-//         })
-//         $("#items").append(button);
-
-//         //create image
-//         let img = $(document.createElement('img'));
-//         img.attr('id', `img-${option.label}`);
-//         img.attr("data-color", 0);
-//         img.attr("src", `assets/sprites/${menu}/${option.id}/${option.colors[0]}.svg`)
-//         $(`#${option.label}`).append(img);
-
-//         //create options div
-//         let options = $(document.createElement('div'));
-//         options.attr('id', `select-${option.label}`);
-//         options.addClass("options");
-//         $(`#${option.label}`).append(options);
-
-//         //add color options
-//         for (let c = 0; c < option.colors.length; c++) {
-//             const color = option.colors[c];
-//             let select = $(document.createElement('button'));
-//             select.addClass("color-select");
-//             if(c == 0) {
-//             select.addClass("active-color");
-//             }
-//             select.attr('id', `select-${option.label}-${c}`);
-//             select.attr("data-color", c);
-//             select.attr("style", `background-image: url(assets/sprites/colors/${color}.svg`)
-//             select.html("<span></span>")
-//             select.on("click", (e) => {
-//                 e.preventDefault();
-//                 previewMenu(menu, option.label, option.id, c, color);
-
-//                 //change active
-//                 console.log(e.target.id);
-//                 let optionid = e.target.id.substring(0, e.target.id.length - 2);
-//                 $(`#${optionid} .active-color`).removeClass('active-color');
-//                 $(`#${e.target.id}`).addClass('active-color');
-//             })
-
-//             $(`#${option.label} .options`).append(select);
-//         }
-//     });
-    
-// }
-
 function openInstructions() {
-    console.log('open', $("#instructions"));
     $("#instructions").addClass('show-instructions');
     $("#instructions").removeClass('hide-instructions');
 }
 
+var audioElement = document.getElementById("audio-element");;
+var audioIcon = $("#audio-icon");
+
 function closeInstructions() {
-    console.log('close', $("#instructions"));
     $("#instructions").addClass('hide-instructions');
     $("#instructions").removeClass('show-instructions');
+
+    if(audioElement.paused) {
+        audioElement.play();
+        audioIcon.attr("src", 'assets/ui/audio-on.svg')
+    }
 }
 
+function togglePlay() {
+    if (audioElement.paused) {
+        audioElement.play();
+        audioIcon.attr("src", 'assets/ui/audio-on.svg')
+    }
+    else {
+        audioElement.pause();
+        audioIcon.attr("src", 'assets/ui/audio-off.svg')
+    }
+};
+
 $(document).ready(function () {
+    $("#audio-element")[0].volume = 0.5;
+
     loadroom();
 
     $(document).on("click",".tile", function () {

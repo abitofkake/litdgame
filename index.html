@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ralsei's Room Re-decorator</title>
+    <title>Ralsei's Room Redecorator</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" 
     type="image/png" 
@@ -101,96 +101,250 @@
                 </div>
                 <div id="decor" class="items-container items-hidden">
                     <div class="desktop items">
-                        <img src="assets/sprites/decor/0/0.svg" alt="" class="item" onclick="selectObject('decor', 0)">
-                        <img src="assets/sprites/decor/1/0.svg" alt="" class="item" onclick="selectObject('decor', 1)">
-                        <img src="assets/sprites/decor/2/0.svg" alt="" class="item" onclick="selectObject('decor', 2)">
-                        <img src="assets/sprites/decor/4/0.svg" alt="" class="item" onclick="selectObject('decor', 4)">
-                        
-                        <img src="assets/sprites/decor/5/0.svg" alt="" class="item" onclick="selectObject('decor', 5)">
-                        <img src="assets/sprites/decor/5/1.svg" alt="" class="item" onclick="selectObject('decor', 5)">
-                        <img src="assets/sprites/decor/3/0.svg" alt="" class="item" onclick="selectObject('decor', 3)">
+                        <!-- row 1 -->
+                        <img src="assets/sprites/decor/0/0.svg" alt="Front of a Ralsei plush" class="item" onclick="selectObject('decor', 0)">
+                        <img src="assets/sprites/decor/1/0.svg" alt="Front of a Susie plush" class="item" onclick="selectObject('decor', 1)">
+                        <img src="assets/sprites/decor/2/0.svg" alt="Front of a Kris plush" class="item" onclick="selectObject('decor', 2)">
+                        <img src="assets/sprites/decor/4/0.svg" alt="Lamp" class="item" onclick="selectObject('decor', 4)">
+
+                        <!-- row 2 -->
+                        <img src="assets/sprites/decor/10/0.svg" alt="Back of a Ralsei plush" class="item" onclick="selectObject('decor', 10)">  
+                        <img src="assets/sprites/decor/11/0.svg" alt="Back of a Susie plush" class="item" onclick="selectObject('decor', 11)">  
+                        <img src="assets/sprites/decor/12/0.svg" alt="Back of a Kris plush" class="item" onclick="selectObject('decor', 12)">  
                         <img src="assets/sprites/decor/4/1.svg" alt="" class="item" onclick="selectObject('decor', 4)">
 
-                        <img src="assets/sprites/decor/6/0.svg" alt="" class="item" onclick="selectObject('decor', 6)">
-                        <img src="assets/sprites/decor/6/1.svg" alt="" class="item" onclick="selectObject('decor', 6)">
-                        <div class="item"></div>                        
-                        <div class="item"></div>
-                    </div>
-                    <div class="mobile items">
-                        <img src="assets/sprites/decor/0/0.svg" alt="" class="item" onclick="selectObject('decor', 0)">
-                        <img src="assets/sprites/decor/1/0.svg" alt="" class="item" onclick="selectObject('decor', 1)">
-                        <img src="assets/sprites/decor/2/0.svg" alt="" class="item" onclick="selectObject('decor', 2)">
-                        <img src="assets/sprites/decor/3/0.svg" alt="" class="item" onclick="selectObject('decor', 3)">
-                        <img src="assets/sprites/decor/4/0.svg" alt="" class="item" onclick="selectObject('decor', 4)">
-                        <div class="item"></div>
-                        
+                        <!-- row 3 -->
                         <img src="assets/sprites/decor/5/0.svg" alt="" class="item" onclick="selectObject('decor', 5)">
                         <img src="assets/sprites/decor/5/1.svg" alt="" class="item" onclick="selectObject('decor', 5)">
+                        <img src="assets/sprites/decor/3/0.svg" alt="" class="item" onclick="selectObject('decor', 3)">
+                        <div class="item"></div>
+
+                        <!-- row 4 -->
+                        <img src="assets/sprites/decor/6/0.svg" alt="" class="item" onclick="selectObject('decor', 6)">
+                        <img src="assets/sprites/decor/6/1.svg" alt="" class="item" onclick="selectObject('decor', 6)">         
+                        <img src="assets/sprites/decor/7/0.svg" alt="Video game console with 3 controllers" class="item" onclick="selectObject('decor', 7)">      
+                        <img src="assets/sprites/decor/8/0.svg" alt="Video game console with 3 controllers" class="item" onclick="selectObject('decor', 8)">
+
+                        <!-- row 5 -->
+                        <img src="assets/sprites/decor/14/0.svg" alt="Single green book" class="item" onclick="selectObject('decor', 14)">
+                        <img src="assets/sprites/decor/13/0.svg" alt="Stack of books" class="item" onclick="selectObject('decor', 13)">
+                        <img src="assets/sprites/decor/15/0.svg" alt="Line of books" class="item" onclick="selectObject('decor', 15)">
+                        <img src="assets/sprites/decor/9/0.svg" alt="Video game console with 3 controllers" class="item" onclick="selectObject('decor', 9)"> 
+                        
+                        <!-- row 6 -->
+                        <img src="assets/sprites/decor/18/0.svg" alt="Cake" class="item" onclick="selectObject('decor', 18)">
+                        <img src="assets/sprites/decor/18/1.svg" alt="Cake" class="item" onclick="selectObject('decor', 18)">
+                        <img src="assets/sprites/decor/17/0.svg" alt="Single teacup" class="item" onclick="selectObject('decor', 17)">
+                        <img src="assets/sprites/decor/16/0.svg" alt="Teacups" class="item" onclick="selectObject('decor', 16)">
+                        <img src="assets/sprites/decor/19/0.svg" alt="Cake" class="item" onclick="selectObject('decor', 19)">
+                    </div>
+                    <div class="mobile items">
+                        <img src="assets/sprites/decor/0/0.svg" alt="Ralsei plush" class="item" onclick="selectObject('decor', 0)">
+                        <img src="assets/sprites/decor/1/0.svg" alt="Susie plush" class="item" onclick="selectObject('decor', 1)">
+                        <img src="assets/sprites/decor/2/0.svg" alt="Kris plush" class="item" onclick="selectObject('decor', 2)">
+                        <img src="assets/sprites/decor/5/0.svg" alt="" class="item" onclick="selectObject('decor', 5)">
+                        <img src="assets/sprites/decor/5/1.svg" alt="" class="item" onclick="selectObject('decor', 5)">
+                        <img src="assets/sprites/decor/4/0.svg" alt="Lamp" class="item" onclick="selectObject('decor', 4)">
+
+                        
+                        <img src="assets/sprites/decor/7/0.svg" alt="Video game console with 3 controllers" class="item" onclick="selectObject('decor', 7)">      
+                        <img src="assets/sprites/decor/8/0.svg" alt="Video game console with 3 controllers" class="item" onclick="selectObject('decor', 8)">
+                        <img src="assets/sprites/decor/3/0.svg" alt="Pillow" class="item" onclick="selectObject('decor', 3)">
                         <img src="assets/sprites/decor/6/0.svg" alt="" class="item" onclick="selectObject('decor', 6)">
                         <img src="assets/sprites/decor/6/1.svg" alt="" class="item" onclick="selectObject('decor', 6)">
                         <img src="assets/sprites/decor/4/1.svg" alt="" class="item" onclick="selectObject('decor', 4)">
-                        <div class="item"></div>
+
+                        <img src="assets/sprites/decor/9/0.svg" alt="Video game console with 3 controllers" class="item" onclick="selectObject('decor', 9)">                          
+                        <img src="assets/sprites/decor/14/0.svg" alt="Single green book" class="item" onclick="selectObject('decor', 14)">
+                        <img src="assets/sprites/decor/13/0.svg" alt="Stack of books" class="item" onclick="selectObject('decor', 13)">
+                        <img src="assets/sprites/decor/15/0.svg" alt="Line of books" class="item" onclick="selectObject('decor', 15)">  
+                        <img src="assets/sprites/decor/17/0.svg" alt="Single teacup" class="item" onclick="selectObject('decor', 17)">
+                        <img src="assets/sprites/decor/16/0.svg" alt="Teacups" class="item" onclick="selectObject('decor', 16)">
+
+                        <img src="assets/sprites/decor/18/0.svg" alt="Cake" class="item" onclick="selectObject('decor', 18)">
+                        <img src="assets/sprites/decor/18/1.svg" alt="Cake" class="item" onclick="selectObject('decor', 18)">
+                        <img src="assets/sprites/decor/19/0.svg" alt="Cake" class="item" onclick="selectObject('decor', 19)">
                     </div>
                 </div>
                 <div id="furniture" class="items-container items-hidden">
                     <div class="desktop items">
+                        <!-- row 1 -->
                         <img src="assets/sprites/furniture/0/0.svg" alt="Nightstand filled with books" class="item" onclick="selectObject('furniture', 0)">
+                        <img src="assets/sprites/furniture/1/0.svg" alt="Short empty grey shelf" class="item" onclick="selectObject('furniture', 1)">
+                        <img src="assets/sprites/furniture/2/0.svg" alt="Long empty grey shelf" class="item" onclick="selectObject('furniture', 2)">
+                        <img src="assets/sprites/furniture/2/1.svg" alt="Long empty grey shelf" class="item" onclick="selectObject('furniture', 2)">
+                    
+                        <!-- row 2 -->
+                        <img src="assets/sprites/furniture/3/0.svg" alt="Back of a nightstand" class="item" onclick="selectObject('furniture', 3)">
+                        <div class="item"></div>
+                        <img src="assets/sprites/furniture/4/0.svg" onclick="selectObject('furniture', 4)" alt="TV" class="item">
+                        <img src="assets/sprites/furniture/5/0.svg" onclick="selectObject('furniture', 5)" alt="TV" class="item">
+                    
+                        <!-- row 3 -->
+                        <img src="assets/sprites/furniture/8/0.svg" onclick="selectObject('furniture', 8)" alt="Covered table" class="item">
+                        <img src="assets/sprites/furniture/8/1.svg" onclick="selectObject('furniture', 8)" alt="Covered table" class="item">
+                        <img src="assets/sprites/furniture/6/0.svg" onclick="selectObject('furniture', 6)" alt="TV" class="item">
+                        <img src="assets/sprites/furniture/7/0.svg" onclick="selectObject('furniture', 7)" alt="TV" class="item">
+
+                        <!-- row 4 -->
+                        <img src="assets/sprites/furniture/8/2.svg" onclick="selectObject('furniture', 8)" alt="Covered table" class="item">
+                        <img src="assets/sprites/furniture/8/3.svg" onclick="selectObject('furniture', 8)" alt="Covered table" class="item">
                         <div class="item"></div>
                         <div class="item"></div>
+
+                        <!-- row 5 -->
+                        <img src="assets/sprites/furniture/9/0.svg" onclick="selectObject('furniture', 9)" alt="Covered table" class="item">
+                        <img src="assets/sprites/furniture/9/1.svg" onclick="selectObject('furniture', 9)" alt="Covered table" class="item">
                         <div class="item"></div>
+                        <div class="item"></div>
+
+                        <!-- row 5 -->
+                        <img src="assets/sprites/furniture/9/2.svg" onclick="selectObject('furniture', 9)" alt="Covered table" class="item">
+                        <img src="assets/sprites/furniture/9/3.svg" onclick="selectObject('furniture', 9)" alt="Covered table" class="item">
                     </div>
                     <div class="mobile items">
+                        <!-- row 1 -->
                         <img src="assets/sprites/furniture/0/0.svg" alt="Nightstand filled with books" class="item" onclick="selectObject('furniture', 0)">
+                        <img src="assets/sprites/furniture/3/0.svg" alt="Back of a nightstand" class="item" onclick="selectObject('furniture', 3)">
+                        <img src="assets/sprites/furniture/1/0.svg" alt="Short empty grey shelf" class="item" onclick="selectObject('furniture', 1)">
+                        <img src="assets/sprites/furniture/2/0.svg" alt="Long empty grey shelf" class="item" onclick="selectObject('furniture', 2)">
+                        <img src="assets/sprites/furniture/2/1.svg" alt="Long empty grey shelf" class="item" onclick="selectObject('furniture', 2)">
+                        <div class="item"></div>
+
+                        <!-- row 2 -->
+                        <img src="assets/sprites/furniture/4/0.svg" onclick="selectObject('furniture', 4)" alt="TV" class="item">
+                        <img src="assets/sprites/furniture/5/0.svg" onclick="selectObject('furniture', 5)" alt="TV" class="item">
+                        <img src="assets/sprites/furniture/6/0.svg" onclick="selectObject('furniture', 6)" alt="TV" class="item">
+                        <img src="assets/sprites/furniture/7/0.svg" onclick="selectObject('furniture', 7)" alt="TV" class="item">
                         <div class="item"></div>
                         <div class="item"></div>
+
+                        <!-- row 3 -->
+                        <img src="assets/sprites/furniture/8/0.svg" onclick="selectObject('furniture', 8)" alt="Covered table" class="item">
+                        <img src="assets/sprites/furniture/8/1.svg" onclick="selectObject('furniture', 8)" alt="Covered table" class="item">
+                        <img src="assets/sprites/furniture/9/0.svg" onclick="selectObject('furniture', 9)" alt="Covered table" class="item">
+                        <img src="assets/sprites/furniture/9/1.svg" onclick="selectObject('furniture', 9)" alt="Covered table" class="item">
                         <div class="item"></div>
                         <div class="item"></div>
-                        <div class="item"></div>
+
+                        <!-- row 4 -->
+                        <img src="assets/sprites/furniture/8/2.svg" onclick="selectObject('furniture', 8)" alt="Covered table" class="item">
+                        <img src="assets/sprites/furniture/8/3.svg" onclick="selectObject('furniture', 8)" alt="Covered table" class="item">
+                        <img src="assets/sprites/furniture/9/2.svg" onclick="selectObject('furniture', 9)" alt="Covered table" class="item">
+                        <img src="assets/sprites/furniture/9/3.svg" onclick="selectObject('furniture', 9)" alt="Covered table" class="item">
                     </div>
                 </div>
                 <div id="bed" class="items-container items-hidden">
                     <div class="desktop items">
+                        <!-- row 1 -->
                         <img src="assets/sprites/bed/0/0.svg" alt="Plain green twin bed" class="item" onclick="selectObject('bed', 0)">
+                        <img src="assets/sprites/bed/8/0.svg" alt="Plain green twin bed" class="item" onclick="selectObject('bed', 8)">
                         <img src="assets/sprites/bed/1/0.svg" alt="Plaid green twin bed" class="item" onclick="selectObject('bed', 1)">
-                        <img src="assets/sprites/bed/2/0.svg" alt="Striped green and white twin bed" class="item select" onclick="selectObject('bed', 2)">
-                        <div class="item"></div>
+                        <img src="assets/sprites/bed/9/0.svg" alt="Plaid twin bed" class="item" onclick="selectObject('bed', 9)">
 
+                        <!-- row 2 -->
                         <img src="assets/sprites/bed/0/1.svg" alt="Plain green twin bed" class="item" onclick="selectObject('bed', 0)">
+                        <img src="assets/sprites/bed/8/1.svg" alt="Plain green twin bed" class="item" onclick="selectObject('bed', 8)">
                         <img src="assets/sprites/bed/1/1.svg" alt="Plaid green twin bed" class="item" onclick="selectObject('bed', 1)">
+                        <img src="assets/sprites/bed/9/1.svg" alt="Plaid twin bed" class="item" onclick="selectObject('bed', 9)">
+ 
+                        <!-- row 3 -->                        
+                        <img src="assets/sprites/bed/2/0.svg" alt="Striped green and white twin bed" class="item select" onclick="selectObject('bed', 2)">
+                        <img src="assets/sprites/bed/10/0.svg" alt="Striped green and white twin bed" class="item" onclick="selectObject('bed', 10)">
+                        <img src="assets/sprites/bed/5/0.svg" alt="Green queen bed" class="item" onclick="selectObject('bed', 5)">
+                        <img src="assets/sprites/bed/5/1.svg" alt="Green queen bed" class="item" onclick="selectObject('bed', 5)">
+
+                        <!-- row 4 -->
                         <img src="assets/sprites/bed/2/1.svg" alt="Striped green and white twin bed" class="item select" onclick="selectObject('bed', 2)">
-                        <div class="item"></div>
-                        
-                        <img src="assets/sprites/bed/3/0.svg" alt="Dark green 2-seater couch" class="item" onclick="selectObject('bed', 3)">
-                        <img src="assets/sprites/bed/3/1.svg" alt="Dark green 2-seater couch" class="item" onclick="selectObject('bed', 3)">
+                        <img src="assets/sprites/bed/10/1.svg" alt="Striped green and white twin bed" class="item" onclick="selectObject('bed', 10)">
+                        <img src="assets/sprites/bed/5/2.svg" alt="Green queen bed" class="item" onclick="selectObject('bed', 5)">
+                        <img src="assets/sprites/bed/5/3.svg" alt="Green queen bed" class="item" onclick="selectObject('bed', 5)">
+
+                        <!-- row 5 -->                        
                         <img src="assets/sprites/bed/4/0.svg" alt="Light green 2-seater couch" class="item" onclick="selectObject('bed', 4)">
                         <img src="assets/sprites/bed/4/1.svg" alt="Light green 2-seater couch" class="item" onclick="selectObject('bed', 4)">
+                        <img src="assets/sprites/bed/7/0.svg" alt="Green queen bed" class="item" onclick="selectObject('bed', 7)">
+                        <img src="assets/sprites/bed/7/1.svg" alt="Green queen bed" class="item" onclick="selectObject('bed', 7)">
+
+                        <!-- row 6 -->
+                        <img src="assets/sprites/bed/3/0.svg" alt="Green 2-seater couch" class="item" onclick="selectObject('bed', 3)">
+                        <img src="assets/sprites/bed/3/1.svg" alt="Green 2-seater couch" class="item" onclick="selectObject('bed', 3)">
+                        <img src="assets/sprites/bed/7/2.svg" alt="Green queen bed" class="item" onclick="selectObject('bed', 7)">
+                        <img src="assets/sprites/bed/7/3.svg" alt="Green queen bed" class="item" onclick="selectObject('bed', 7)">
+
+                        <!-- row 5 -->
+                        <img src="assets/sprites/bed/17/0.svg" alt="Armchair" class="item" onclick="selectObject('bed', 17)">
+                        <img src="assets/sprites/bed/17/1.svg" alt="Armchair" class="item" onclick="selectObject('bed', 17)">
+                        <img src="assets/sprites/bed/11/0.svg" alt="Armchair" class="item" onclick="selectObject('bed', 11)">
+                        <img src="assets/sprites/bed/12/0.svg" alt="Armchair" class="item" onclick="selectObject('bed', 12)">
+
+                        <!-- row 6 -->
+                        <img src="assets/sprites/bed/15/0.svg" alt="Armchair" class="item" onclick="selectObject('bed', 15)">
+                        <img src="assets/sprites/bed/16/0.svg" alt="Armchair" class="item" onclick="selectObject('bed', 16)">
+                        <img src="assets/sprites/bed/13/0.svg" alt="Armchair" class="item" onclick="selectObject('bed', 13)">
+                        <img src="assets/sprites/bed/14/0.svg" alt="Armchair" class="item" onclick="selectObject('bed', 14)">
+
+                        <!-- row 7 -->
+                        <img src="assets/sprites/bed/15/1.svg" alt="Armchair" class="item" onclick="selectObject('bed', 15)">
+                        <img src="assets/sprites/bed/16/1.svg" alt="Armchair" class="item" onclick="selectObject('bed', 16)">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
                     </div>
                     <div class="mobile items">
+                        <!-- row 1 -->
                         <img src="assets/sprites/bed/0/0.svg" alt="Plain green twin bed" class="item" onclick="selectObject('bed', 0)">
+                        <img src="assets/sprites/bed/8/0.svg" alt="Plain green twin bed" class="item" onclick="selectObject('bed', 8)">
                         <img src="assets/sprites/bed/1/0.svg" alt="Plaid green twin bed" class="item" onclick="selectObject('bed', 1)">
-                        <img src="assets/sprites/bed/2/0.svg" alt="Striped green and white twin bed" class="item select" onclick="selectObject('bed', 2)">
-                        <img src="assets/sprites/bed/3/0.svg" alt="Green 2-seater couch" class="item" onclick="selectObject('bed', 3)">
-                        <img src="assets/sprites/bed/3/1.svg" alt="Green 2-seater couch" class="item" onclick="selectObject('bed', 3)">
-                        <div class="item"></div>
+                        <img src="assets/sprites/bed/9/0.svg" alt="Plaid twin bed" class="item" onclick="selectObject('bed', 9)">
+                        <img src="assets/sprites/bed/5/0.svg" alt="Green queen bed" class="item" onclick="selectObject('bed', 5)">
+                        <img src="assets/sprites/bed/5/1.svg" alt="Green queen bed" class="item" onclick="selectObject('bed', 5)">
 
+                        <!-- row 2 -->
                         <img src="assets/sprites/bed/0/1.svg" alt="Plain green twin bed" class="item" onclick="selectObject('bed', 0)">
+                        <img src="assets/sprites/bed/8/1.svg" alt="Plain green twin bed" class="item" onclick="selectObject('bed', 8)">
                         <img src="assets/sprites/bed/1/1.svg" alt="Plaid green twin bed" class="item" onclick="selectObject('bed', 1)">
-                        <img src="assets/sprites/bed/2/1.svg" alt="Striped green and white twin bed" class="item select" onclick="selectObject('bed', 2)">
+                        <img src="assets/sprites/bed/9/1.svg" alt="Plaid twin bed" class="item" onclick="selectObject('bed', 9)">
+                        <img src="assets/sprites/bed/5/2.svg" alt="Green queen bed" class="item" onclick="selectObject('bed', 5)">
+                        <img src="assets/sprites/bed/5/3.svg" alt="Green queen bed" class="item" onclick="selectObject('bed', 5)">
+
+                        <!-- row 3 -->
                         <img src="assets/sprites/bed/4/0.svg" alt="Light green 2-seater couch" class="item" onclick="selectObject('bed', 4)">
                         <img src="assets/sprites/bed/4/1.svg" alt="Light green 2-seater couch" class="item" onclick="selectObject('bed', 4)">
-                        <div class="item"></div>
-                        <img src="assets/sprites/bed/0/0.svg" alt="Plain green twin bed" class="item" onclick="selectObject('bed', 0)">
-                        <img src="assets/sprites/bed/1/0.svg" alt="Plaid green twin bed" class="item" onclick="selectObject('bed', 1)">
                         <img src="assets/sprites/bed/2/0.svg" alt="Striped green and white twin bed" class="item select" onclick="selectObject('bed', 2)">
+                        <img src="assets/sprites/bed/10/0.svg" alt="Plaid twin bed" class="item" onclick="selectObject('bed', 10)">
+                        <img src="assets/sprites/bed/7/0.svg" alt="Green queen bed" class="item" onclick="selectObject('bed', 7)">
+                        <img src="assets/sprites/bed/7/1.svg" alt="Green queen bed" class="item" onclick="selectObject('bed', 7)">
+
+                        <!-- row 4 -->
                         <img src="assets/sprites/bed/3/0.svg" alt="Green 2-seater couch" class="item" onclick="selectObject('bed', 3)">
                         <img src="assets/sprites/bed/3/1.svg" alt="Green 2-seater couch" class="item" onclick="selectObject('bed', 3)">
+                        <img src="assets/sprites/bed/2/1.svg" alt="Striped green and white twin bed" class="item select" onclick="selectObject('bed', 2)">
+                        <img src="assets/sprites/bed/10/1.svg" alt="Plaid twin bed" class="item" onclick="selectObject('bed', 10)">
+                        <img src="assets/sprites/bed/7/2.svg" alt="Green queen bed" class="item" onclick="selectObject('bed', 7)">
+                        <img src="assets/sprites/bed/7/3.svg" alt="Green queen bed" class="item" onclick="selectObject('bed', 7)">
+
+                        <!-- row 5 -->
+                        <img src="assets/sprites/bed/17/0.svg" alt="Armchair" class="item" onclick="selectObject('bed', 17)">
+                        <img src="assets/sprites/bed/17/1.svg" alt="Armchair" class="item" onclick="selectObject('bed', 17)">
+                        <img src="assets/sprites/bed/11/0.svg" alt="Armchair" class="item" onclick="selectObject('bed', 11)">
+                        <img src="assets/sprites/bed/12/0.svg" alt="Armchair" class="item" onclick="selectObject('bed', 12)">
+                        <img src="assets/sprites/bed/13/0.svg" alt="Armchair" class="item" onclick="selectObject('bed', 13)">
+                        <img src="assets/sprites/bed/14/0.svg" alt="Armchair" class="item" onclick="selectObject('bed', 14)">
+
+                        <img src="assets/sprites/bed/15/0.svg" alt="Armchair" class="item" onclick="selectObject('bed', 15)">
+                        <img src="assets/sprites/bed/16/0.svg" alt="Armchair" class="item" onclick="selectObject('bed', 16)">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
                         <div class="item"></div>
 
-                        <img src="assets/sprites/bed/0/1.svg" alt="Plain green twin bed" class="item" onclick="selectObject('bed', 0)">
-                        <img src="assets/sprites/bed/1/1.svg" alt="Plaid green twin bed" class="item" onclick="selectObject('bed', 1)">
-                        <img src="assets/sprites/bed/2/1.svg" alt="Striped green and white twin bed" class="item select" onclick="selectObject('bed', 2)">
-                        <img src="assets/sprites/bed/4/0.svg" alt="Light green 2-seater couch" class="item" onclick="selectObject('bed', 4)">
-                        <img src="assets/sprites/bed/4/1.svg" alt="Light green 2-seater couch" class="item" onclick="selectObject('bed', 4)">
+                        <img src="assets/sprites/bed/15/1.svg" alt="Armchair" class="item" onclick="selectObject('bed', 15)">
+                        <img src="assets/sprites/bed/16/1.svg" alt="Armchair" class="item" onclick="selectObject('bed', 16)">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
                         <div class="item"></div>
                     </div>
                 </div>
@@ -215,6 +369,25 @@
                         <img src="assets/sprites/rug/1/4.svg" alt="Green rug with the Deltarune symbol" class="item" onclick="selectObject('rug', 1)">
                         <img src="assets/sprites/rug/1/5.svg" alt="Green rug with the Deltarune symbol" class="item" onclick="selectObject('rug', 1)">
                         <div class="item"></div>
+
+                        <img src="assets/sprites/rug/2/0.svg" alt="Dark lace rug" class="item" onclick="selectObject('rug', 2)">
+                        <img src="assets/sprites/rug/2/1.svg" alt="Dark lace rug" class="item" onclick="selectObject('rug', 2)">
+                        <img src="assets/sprites/rug/3/0.svg" alt="White lace rug" class="item" onclick="selectObject('rug', 3)">
+                        <img src="assets/sprites/rug/3/1.svg" alt="White lace rug" class="item" onclick="selectObject('rug', 3)">
+
+                        <img src="assets/sprites/rug/2/2.svg" alt="Dark lace rug" class="item" onclick="selectObject('rug', 2)">
+                        <img src="assets/sprites/rug/2/3.svg" alt="Dark lace rug" class="item" onclick="selectObject('rug', 2)">
+                        <img src="assets/sprites/rug/3/2.svg" alt="White lace rug" class="item" onclick="selectObject('rug', 3)">
+                        <img src="assets/sprites/rug/3/3.svg" alt="White lace rug" class="item" onclick="selectObject('rug', 3)">
+
+
+                        <img src="assets/sprites/rug/4/0.svg" alt="Green lace rug" class="item" onclick="selectObject('rug', 4)">
+                        <img src="assets/sprites/rug/4/1.svg" alt="Green lace rug" class="item" onclick="selectObject('rug', 4)">
+                        <div class="item"></div>
+                        <div class="item"></div>
+
+                        <img src="assets/sprites/rug/4/2.svg" alt="Green lace rug" class="item" onclick="selectObject('rug', 4)">
+                        <img src="assets/sprites/rug/4/3.svg" alt="Green lace rug" class="item" onclick="selectObject('rug', 4)">
                     </div>
                     <div class="mobile items">
                         <img src="assets/sprites/rug/0/0.svg" alt="Dark rug with the Deltarune symbol" class="item" onclick="selectObject('rug', 0)">
@@ -230,6 +403,20 @@
                         <img src="assets/sprites/rug/1/3.svg" alt="Green rug with the Deltarune symbol" class="item" onclick="selectObject('rug', 1)">
                         <img src="assets/sprites/rug/1/4.svg" alt="Green rug with the Deltarune symbol" class="item" onclick="selectObject('rug', 1)">
                         <img src="assets/sprites/rug/1/5.svg" alt="Green rug with the Deltarune symbol" class="item" onclick="selectObject('rug', 1)">
+
+                        <img src="assets/sprites/rug/2/0.svg" alt="Green lace rug" class="item" onclick="selectObject('rug', 2)">
+                        <img src="assets/sprites/rug/2/1.svg" alt="Green lace rug" class="item" onclick="selectObject('rug', 2)">
+                        <img src="assets/sprites/rug/3/0.svg" alt="White lace rug" class="item" onclick="selectObject('rug', 3)">
+                        <img src="assets/sprites/rug/3/1.svg" alt="White lace rug" class="item" onclick="selectObject('rug', 3)">
+                        <img src="assets/sprites/rug/4/0.svg" alt="Green lace rug" class="item" onclick="selectObject('rug', 4)">
+                        <img src="assets/sprites/rug/4/1.svg" alt="Green lace rug" class="item" onclick="selectObject('rug', 4)">
+
+                        <img src="assets/sprites/rug/2/2.svg" alt="Green lace rug" class="item" onclick="selectObject('rug', 2)">
+                        <img src="assets/sprites/rug/2/3.svg" alt="Green lace rug" class="item" onclick="selectObject('rug', 2)">
+                        <img src="assets/sprites/rug/3/2.svg" alt="White lace rug" class="item" onclick="selectObject('rug', 3)">
+                        <img src="assets/sprites/rug/3/3.svg" alt="White lace rug" class="item" onclick="selectObject('rug', 3)">
+                        <img src="assets/sprites/rug/4/2.svg" alt="Green lace rug" class="item" onclick="selectObject('rug', 4)">
+                        <img src="assets/sprites/rug/4/3.svg" alt="Green lace rug" class="item" onclick="selectObject('rug', 4)">
                     </div>
                 </div>
                 <div id="flooring" class="items-container items-active flooring-menu">
@@ -287,6 +474,15 @@
             </div>
         </div>
         <div id="game" class="game">
+            <audio id="audio-element" loop>
+            <source src="assets/audio/little-room.mp3" type="audio/mpeg">
+            </audio>
+            <button class="audio" onclick="togglePlay()">
+                <img id="audio-icon" src="assets/ui/audio-off.svg" alt="">
+            </button>
+            <!-- <div id="audio" class="audio"> -->
+                <!-- <p>Now playing... Little Room by Cokoberd</p> -->
+            <!-- </div> -->
             <div id="room"></div>
             <!-- <div class="active-display">
                 <img src="" alt="">
