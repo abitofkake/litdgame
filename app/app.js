@@ -471,7 +471,7 @@ let objects = {
             },
             {
                 "id": 2,
-                "label": "lace-rug-green",
+                "label": "lace-rug-dark",
                 "size": {
                     h: 2,
                     w: 2
@@ -480,6 +480,14 @@ let objects = {
             {
                 "id": 3,
                 "label": "lace-rug-white",
+                "size": {
+                    h: 2,
+                    w: 2
+                }
+            },
+            {
+                "id": 4,
+                "label": "lace-rug-green",
                 "size": {
                     h: 2,
                     w: 2
